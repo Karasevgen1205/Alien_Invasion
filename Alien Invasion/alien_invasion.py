@@ -1,6 +1,5 @@
 import sys
 import pygame
-
 from time import sleep
 from settings import Settings
 from ship import Ship
@@ -9,6 +8,7 @@ from alien import Alien
 from game_stats import GameStats
 from button import Button
 from scoreboard import Scoreboard
+
 
 class AlienInvasion:
     
@@ -29,7 +29,6 @@ class AlienInvasion:
         self._create_fleet()
         # Создание кнопки Play
         self.play_button = Button(self, "Play")
-
 
     def run_game(self):
         #Запуск основного цикла игры
@@ -219,7 +218,6 @@ class AlienInvasion:
             self.play_button.draw_button()
 
         pygame.display.flip()
-
 
 
 if __name__ == '__main__':
